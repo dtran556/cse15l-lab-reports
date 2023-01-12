@@ -11,4 +11,5 @@ First you must install VS Code by going to this link [VsCode Page](https://code.
 Once you are finished installing it you it should look like this when you open the program:
 ![Image](/images/vsCode.png)
 
-# Part 2: Setting up your ieng account
+# Part 2: Setting up your CSE 15L Account
+To find your account you go to this link : [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) fill out your information and set up your account by assigning the account a password. If you are struggling to give the account a password follow the instructions on this page : [Reset Password](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
