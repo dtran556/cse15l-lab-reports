@@ -10,3 +10,5 @@ First you must install VS Code by going to this link [VsCode Page](https://code.
 
 Once you are finished installing it you it should look like this when you open the program:
 ![Image](/images/vsCode.png)
+
+# Part 2: Setting up your ieng account
