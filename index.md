@@ -16,5 +16,7 @@ To find your account you go to this link : [Account Lookup](https://sdacs.ucsd.e
 After you have sucessfully set up your account you have to wait up to a few minutes for your account to be set up properly.
 
 # Part 3: Remotely connecting to the server
+Depending on your operating system, connecting to servers for the first time will be different. If you have windows you must first download git and then go to your terminal and type   ```git bash```.
+This next part will be the same for Windows OS or Mac OS, you then go to terminal and type this ```ssh cs15lwi23xyz@ieng6.ucsd.edu``` with the "xyz" part corresponding to your own specific CSE 15L account.
 
 # Part 4: Trying out commands
