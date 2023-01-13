@@ -22,3 +22,9 @@ If it is your first time you will get a message asking you if you still want to 
 It should look like this when you get in: ![Image](/images/cse15lServer.png)
 
 # Part 4: Trying out commands
+Now that you are connected to the server, lets try out some commands that we learned.
+```cd``` to change directory
+```pwd``` to print the working directory
+```ls``` to list all of the files and folders in the path
+```cat``` to print the contents of the files in the path
+![Image](/images/cse15lcmd.png)
