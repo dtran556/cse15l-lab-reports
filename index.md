@@ -18,5 +18,7 @@ After you have sucessfully set up your account you have to wait up to a few minu
 # Part 3: Remotely connecting to the server
 Depending on your operating system, connecting to servers for the first time will be different. If you have windows you must first download git and then go to your terminal and type   ```git bash```.
 This next part will be the same for Windows OS or Mac OS, you then go to terminal and type this ```ssh cs15lwi23xyz@ieng6.ucsd.edu``` with the "xyz" part corresponding to your own specific CSE 15L account.
+If it is your first time you will get a message asking you if you still want to connect even though it cannot verify the authenticity of the server, you should enter yes and you are in.
+It should look like this when you get in: ![Image](/images/cse15lServer.png)
 
 # Part 4: Trying out commands
