@@ -81,7 +81,7 @@ When the array was length one it would not induce a failure.
 
 The symptoms of the :
 The symptom of this bug would be that it just does not properly reverse the array.
-You can see the tests passing even with the bug here: ![Image](/images/bothTests15L.png)
+You can see the tests passing even with the bug here: ![Tests](/images/bothTests15L.png)
 
 Before the fixes:
 ```static void reverseInPlace(int[] arr) {
