@@ -2,4 +2,4 @@
 By Daniel Tran
 
 ## Part 1: Creating a Web Server:
-In this part of the lab, we are creating a web server called ```StringServer``` and has the ability to add strings to a list and will 
+In this part of the lab, we are creating a web server called ```StringServer``` and has the ability to add strings to a list and will return the list of strings added and display them on to the server.
