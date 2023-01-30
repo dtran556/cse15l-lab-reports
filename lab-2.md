@@ -89,7 +89,7 @@ Before the fixes:
     }
  ```
 
-After the fixes:
+After the fixes (Fixes were conducted with my lab partner during lab 3):
 ```int[] newArr = new int [arr.length]; 
     for (int i = 0; i < arr.length; i++) {
       newArr[i] = arr[arr.length - i - 1];
