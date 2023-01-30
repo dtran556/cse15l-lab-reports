@@ -1,4 +1,4 @@
-#Lab 2 Report
+# Lab 2 Report
 By Daniel Tran
 
 ## Part 1: Creating a Web Server:
@@ -69,3 +69,34 @@ class Handler implements URLHandler {
 }
 ```
 I derived this code from the NumberServer.java file, the method for the search engine is called ```handleRequest``` and its only arguement is to pass in a url. You can pass in any value after the ```/add-message?s=``` and it will work as the code will process t in as a string.
+
+
+## Part 2: De-Bugging:
+In lab three I tested the reverseInPlace method which is supposed to reverse an array of ints. However we were not getting it for some inputs.
+The failure inducing input:
+for the test I decided to try an array of length four which was ```{12,48,24,55}``` and it should return ```{55,24,48,12}```
+
+The input that does not induce a failure:
+When the array was length one it would not induce a failure:
+
+The symptoms of the :
+The symptom of this bug would be that it just does not properly reverse the array.
+
+Before the fixes:
+```static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+ ```
+
+After the fixes:
+```int[] newArr = new int [arr.length]; 
+    for (int i = 0; i < arr.length; i++) {
+      newArr[i] = arr[arr.length - i - 1];
+    }
+    
+    for (int i = 0; i < newArr.length; i++) {
+      arr[i] = newArr[i];
+    }
+ ```
+The fix fixes the issue because I introduced a new array of the same length which would update the values of ```newArr``` at each index instead of replacing at the indices of ```arr```. This was because ```arr[i[``` was being updated during each iteration of the loop and the values in newArray remained the same.
