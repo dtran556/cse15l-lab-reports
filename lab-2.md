@@ -100,3 +100,7 @@ After the fixes (Fixes were conducted with my lab partner during lab 3):
     }
  ```
 The fix fixes the issue because I introduced a new array of the same length which would update the values of ```newArr``` at each index instead of replacing at the indices of ```arr```. This was because ```arr[i[``` was being updated during each iteration of the loop and the values in newArray remained the same.
+
+
+## Part 3 What I learned:
+During the last two labs (Lab 2 and Lab 3) I learned some basic git commands and about running and hosting a local webserver. I learned about the packages that go into a webserver and queries like ```/add?s=``` or ```/search?s=``` and how to implement them into my code.
