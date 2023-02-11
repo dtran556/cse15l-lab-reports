@@ -10,20 +10,22 @@ For example if you wanted to add a string saying "Hello" you do this: ```/add-me
 You can add another string to it and it would look like this: ![Image](/images/hello215L.png)
 
 My code is shown below:
-```import java.io.IOException;
+
+
+```
+
+import java.io.IOException;
 import java.net.URI;
 import java.util.*;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     int num = 0;
     ArrayList<String> masterList = new ArrayList<String>();
 
     public String handleRequest(URI url) {
         System.out.println("Path: " + url.getPath());
         String input = "";
-        if (url.getPath().contains("/add")) {
+        if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
                 if (!masterList.contains(parameters[1])) {
@@ -35,23 +37,7 @@ class Handler implements URLHandler {
             }
             return input;
         }
-        if (url.getPath().contains("/search")) {
-            String[] parameters = url.getQuery().split("=");
-            ArrayList<String> temp = new ArrayList<String>();
-            // check if it contains store into temp list and return the temp
-            if (parameters[0].equals("s")) {
-                for (int i = 0; i < masterList.size(); i++) {
-                    if (masterList.get(i).equals(parameters[1])) {
-                        temp.add(parameters[1]);
-                    }
-                }
-                if (!temp.isEmpty()) {
-                    return temp.toString();
-                }
-            }
-            return "404 Not Found!";
-        }
-        return "";
+
     }
 
     public class SearchEngine {
@@ -84,6 +70,8 @@ The symptom of this bug would be that it just does not properly reverse the arra
 You can see the tests passing even with the bug here: ![Tests](/images/bothTests15L.png)
 
 Before the fixes:
+
+
 ```static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
@@ -91,6 +79,8 @@ Before the fixes:
  ```
 
 After the fixes (Fixes were conducted with my lab partner during lab 3):
+
+
 ```int[] newArr = new int [arr.length]; 
     for (int i = 0; i < arr.length; i++) {
       newArr[i] = arr[arr.length - i - 1];
