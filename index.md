@@ -40,7 +40,7 @@ class Handler implements URLHandler {
 
     }
 
-    public class SearchEngine {
+    public class StringServer {
         public static void main(String[] args) throws IOException {
             if (args.length == 0) {
                 System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -72,7 +72,8 @@ You can see the tests passing even with the bug here: ![Tests](/images/bothTests
 Before the fixes:
 
 
-```static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
@@ -81,7 +82,8 @@ Before the fixes:
 After the fixes (Fixes were conducted with my lab partner during lab 3):
 
 
-```int[] newArr = new int [arr.length]; 
+```
+int[] newArr = new int [arr.length]; 
     for (int i = 0; i < arr.length; i++) {
       newArr[i] = arr[arr.length - i - 1];
     }
