@@ -61,9 +61,25 @@ I derived this code from the NumberServer.java file, the method for the search e
 In lab three I tested the reverseInPlace method which is supposed to reverse an array of ints. However we were not getting it for some inputs.
 The failure inducing input:
 for the test I decided to try an array of length four which was ```{12,48,24,55}``` and it should return ```{55,24,48,12}```
+```
+public void testReverseInPlace() {
+    int [] list = {12,48,24,55};
+    ArrayExamples.reverseInPlace((list));
+    assertArrayEquals(new int [] {55,24,48,12}, list);
+
+	}
+    
+ ```
 
 The input that does not induce a failure:
 When the array was length one it would not induce a failure.
+```
+public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+ ```
 
 The symptoms of the :
 The symptom of this bug would be that it just does not properly reverse the array.
