@@ -3,7 +3,7 @@ Today we will be talking about the command line command `grep` and its different
 
 
 ## Command line command : `grep -r ""`
-The `grep -r ""` command allows you to go into a directory and find the path that contains the string arguement that the user passes in and provide the context in which the string was menthioned.
+The `grep -r ""` command allows you to go into a directory and find the path that contains the string arguement that the user passes in and provide the context in which the string was mentioned
 Example 1: 
 ```
 [cs15lwi23aun@ieng6-201]:skill-demo1-data:327$ grep -r "hello"
