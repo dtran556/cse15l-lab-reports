@@ -101,7 +101,7 @@ ch9.txt:4
 
 ```
 
-## Command line command `grep -v ""`
+## Command line command #3 `grep -v ""`
 This command is the complete opposite of the command above, instead of counting how many occurances a given word pops up, it instead prints out all occurances where a word does not occur in one or more files.
 Example 1 singular file: 
 ```
