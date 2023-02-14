@@ -43,3 +43,60 @@ written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt:Though Portugal has grown
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:Still, the malecón rules when it comes to sheer rowdy nighttime fun. Along with the longstanding Carlos O’Brians, several open-air bars and dance clubs stay open until 5am, and a new Cuban restaurant-bar pleases patrons with authentic food and live music nightly until 3am. Just a few blocks in back of the malecón are a growing collection of unique clubs with a more urban edge. Among them is La Cantina, a hipper version of a Mexican classic. By day it serves classic cantina fare, by night it clamors with the sound of conversation mixed with the best in contemporary recorded Mexican music. Board games are available for play.
 [cs15lwi23aun@ieng6-201]:skill-demo1-data:332$ 
 ```
+
+## Command line command #2 grep -c "" 
+This command allows you to go through one or more files to check to see how many times a word appears in each file.
+Example 1 looking at one file:
+```
+[cs15lwi23aun@ieng6-201]:~:338$ ls
+docsearch  hello.txt  lab1  perl5  skill-demo1-data  skill-demo1-server  wavelet
+[cs15lwi23aun@ieng6-201]:~:339$ cd skill-demo1-data
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:340$ ls
+find-results.txt  grep-results.txt  written_2
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:342$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:343$ ls                   
+non-fiction  travel_guides
+[cs15lwi23aun@ieng6-201]:written_2:344$ cd non-fiction
+[cs15lwi23aun@ieng6-201]:non-fiction:345$ ls
+OUP
+[cs15lwi23aun@ieng6-201]:non-fiction:347$ cd OUP
+[cs15lwi23aun@ieng6-201]:OUP:348$ ls
+Abernathy  Berk  Castro  Fletcher  Kauffman  Rybczynski
+[cs15lwi23aun@ieng6-201]:OUP:350$ cd Abernathy
+[cs15lwi23aun@ieng6-201]:Abernathy:351$ ls
+ch1.txt  ch14.txt  ch15.txt  ch2.txt  ch3.txt  ch6.txt  ch7.txt  ch8.txt  ch9.txt
+[cs15lwi23aun@ieng6-201]:Abernathy:353$ grep -c "where" ch1.txt
+8
+```
+
+Example 2 looking through multiple files :
+```
+[cs15lwi23aun@ieng6-201]:~:338$ ls
+docsearch  hello.txt  lab1  perl5  skill-demo1-data  skill-demo1-server  wavelet
+[cs15lwi23aun@ieng6-201]:~:339$ cd skill-demo1-data
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:340$ ls
+find-results.txt  grep-results.txt  written_2
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:342$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:343$ ls                   
+non-fiction  travel_guides
+[cs15lwi23aun@ieng6-201]:written_2:344$ cd non-fiction
+[cs15lwi23aun@ieng6-201]:non-fiction:345$ ls
+OUP
+[cs15lwi23aun@ieng6-201]:non-fiction:347$ cd OUP
+[cs15lwi23aun@ieng6-201]:OUP:348$ ls
+Abernathy  Berk  Castro  Fletcher  Kauffman  Rybczynski
+[cs15lwi23aun@ieng6-201]:OUP:350$ cd Abernathy
+[cs15lwi23aun@ieng6-201]:Abernathy:351$ ls
+ch1.txt  ch14.txt  ch15.txt  ch2.txt  ch3.txt  ch6.txt  ch7.txt  ch8.txt  ch9.txt
+[cs15lwi23aun@ieng6-201]:Abernathy:354$ grep -c "where" *.txt
+ch1.txt:8
+ch14.txt:2
+ch15.txt:4
+ch2.txt:4
+ch3.txt:1
+ch6.txt:2
+ch7.txt:2
+ch8.txt:10
+ch9.txt:4
+
+```
