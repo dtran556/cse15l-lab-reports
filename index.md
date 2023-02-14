@@ -432,3 +432,102 @@ ch9.txt:
 ch9.txt:
 [cs15lwi23aun@ieng6-201]:Abernathy:358$ 
 ```
+
+## Command line command #4 `grep -l ""`
+You can use this command to look for a given string inside files in a directory.
+
+Example 1 looking for a string inside one directory:
+```
+[cs15lwi23aun@ieng6-201]:~:375$ ls
+docsearch  hello.txt  lab1  perl5  skill-demo1-data  skill-demo1-server  wavelet
+[cs15lwi23aun@ieng6-201]:~:376$ cd skill-demo1-data
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:377$ ls
+find-results.txt  grep-results.txt  written_2
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:378$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:379$ ls
+non-fiction  travel_guides
+[cs15lwi23aun@ieng6-201]:written_2:380$ cd travel_guides
+[cs15lwi23aun@ieng6-201]:travel_guides:381$ ls
+berlitz1  berlitz2
+[cs15lwi23aun@ieng6-201]:travel_guides:382$ cd grep -l "hello" /berlitz1/*.txt
+-bash: cd: grep: No such file or directory
+[cs15lwi23aun@ieng6-201]:travel_guides:383$ cd berlitz1
+[cs15lwi23aun@ieng6-201]:berlitz1:384$ ls
+HandRHawaii.txt        HandRLosAngeles.txt   HistoryHawaii.txt     HistoryLakeDistrict.txt  IntroFrance.txt    IntroJerusalem.txt     WhatToEdinburgh.txt  WhatToIstanbul.txt      WhereToDublin.txt     WhereToIsrael.txt        WhereToMallorca.txt
+HandRHongKong.txt      HandRMadeira.txt      HistoryHongKong.txt   HistoryLasVegas.txt      IntroGreek.txt     IntroLakeDistrict.txt  WhatToEgypt.txt      WhatToItaly.txt         WhereToEdinburgh.txt  WhereToIstanbul.txt
+HandRIbiza.txt         HandRMadrid.txt       HistoryIbiza.txt      HistoryMadeira.txt       IntroHongKong.txt  IntroLasVegas.txt      WhatToFWI.txt        WhatToJamaica.txt       WhereToEgypt.txt      WhereToItaly.txt
+HandRIsrael.txt        HandRMallorca.txt     HistoryIndia.txt      HistoryMadrid.txt        IntroIbiza.txt     IntroLosAngeles.txt    WhatToFrance.txt     WhatToJapan.txt         WhereToFWI.txt        WhereToJapan.txt
+HandRIstanbul.txt      HistoryDublin.txt     HistoryIsrael.txt     HistoryMalaysia.txt      IntroIndia.txt     IntroMadeira.txt       WhatToGreek.txt      WhatToLakeDistrict.txt  WhereToFrance.txt     WhereToJerusalem.txt
+HandRJamaica.txt       HistoryEdinburgh.txt  HistoryIstanbul.txt   HistoryMallorca.txt      IntroIsrael.txt    IntroMadrid.txt        WhatToHawaii.txt     WhatToLasVegas.txt      WhereToGreek.txt      WhereToLakeDistrict.txt
+HandRJerusalem.txt     HistoryEgypt.txt      HistoryItaly.txt      IntroDublin.txt          IntroIstanbul.txt  IntroMalaysia.txt      WhatToHongKong.txt   WhatToLosAngeles.txt    WhereToHawaii.txt     WhereToLosAngeles.txt
+HandRLakeDistrict.txt  HistoryFWI.txt        HistoryJamaica.txt    IntroEdinburgh.txt       IntroItaly.txt     IntroMallorca.txt      WhatToIbiza.txt      WhatToMadeira.txt       WhereToHongKong.txt   WhereToMadeira.txt
+HandRLasVegas.txt      HistoryFrance.txt     HistoryJapan.txt      IntroEgypt.txt           IntroJamaica.txt   JungleMalaysia.txt     WhatToIndia.txt      WhatToMalaysia.txt      WhereToIbiza.txt      WhereToMadrid.txt
+HandRLisbon.txt        HistoryGreek.txt      HistoryJerusalem.txt  IntroFWI.txt             IntroJapan.txt     WhatToDublin.txt       WhatToIsrael.txt     WhatToMallorca.txt      WhereToIndia.txt      WhereToMalaysia.txt
+
+[cs15lwi23aun@ieng6-201]:berlitz1:386$ grep -l "hello" *.txt
+WhereToHongKong.txt
+WhereToItaly.txt
+```
+Example 2 using -l with -r to look through multiple directories:
+```
+[cs15lwi23aun@ieng6-201]:~:375$ ls
+docsearch  hello.txt  lab1  perl5  skill-demo1-data  skill-demo1-server  wavelet
+[cs15lwi23aun@ieng6-201]:~:376$ cd skill-demo1-data
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:377$ ls
+find-results.txt  grep-results.txt  written_2
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:378$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:379$ ls
+non-fiction  travel_guides
+[cs15lwi23aun@ieng6-201]:written_2:380$ cd travel_guides
+[cs15lwi23aun@ieng6-201]:travel_guides:381$ ls
+berlitz1  berlitz2
+[cs15lwi23aun@ieng6-201]:travel_guides:382$ cd grep -l "hello" /berlitz1/*.txt
+-bash: cd: grep: No such file or directory
+[cs15lwi23aun@ieng6-201]:travel_guides:383$ cd berlitz1
+[cs15lwi23aun@ieng6-201]:berlitz1:384$ ls
+HandRHawaii.txt        HandRLosAngeles.txt   HistoryHawaii.txt     HistoryLakeDistrict.txt  IntroFrance.txt    IntroJerusalem.txt     WhatToEdinburgh.txt  WhatToIstanbul.txt      WhereToDublin.txt     WhereToIsrael.txt        WhereToMallorca.txt
+HandRHongKong.txt      HandRMadeira.txt      HistoryHongKong.txt   HistoryLasVegas.txt      IntroGreek.txt     IntroLakeDistrict.txt  WhatToEgypt.txt      WhatToItaly.txt         WhereToEdinburgh.txt  WhereToIstanbul.txt
+HandRIbiza.txt         HandRMadrid.txt       HistoryIbiza.txt      HistoryMadeira.txt       IntroHongKong.txt  IntroLasVegas.txt      WhatToFWI.txt        WhatToJamaica.txt       WhereToEgypt.txt      WhereToItaly.txt
+HandRIsrael.txt        HandRMallorca.txt     HistoryIndia.txt      HistoryMadrid.txt        IntroIbiza.txt     IntroLosAngeles.txt    WhatToFrance.txt     WhatToJapan.txt         WhereToFWI.txt        WhereToJapan.txt
+HandRIstanbul.txt      HistoryDublin.txt     HistoryIsrael.txt     HistoryMalaysia.txt      IntroIndia.txt     IntroMadeira.txt       WhatToGreek.txt      WhatToLakeDistrict.txt  WhereToFrance.txt     WhereToJerusalem.txt
+HandRJamaica.txt       HistoryEdinburgh.txt  HistoryIstanbul.txt   HistoryMallorca.txt      IntroIsrael.txt    IntroMadrid.txt        WhatToHawaii.txt     WhatToLasVegas.txt      WhereToGreek.txt      WhereToLakeDistrict.txt
+HandRJerusalem.txt     HistoryEgypt.txt      HistoryItaly.txt      IntroDublin.txt          IntroIstanbul.txt  IntroMalaysia.txt      WhatToHongKong.txt   WhatToLosAngeles.txt    WhereToHawaii.txt     WhereToLosAngeles.txt
+HandRLakeDistrict.txt  HistoryFWI.txt        HistoryJamaica.txt    IntroEdinburgh.txt       IntroItaly.txt     IntroMallorca.txt      WhatToIbiza.txt      WhatToMadeira.txt       WhereToHongKong.txt   WhereToMadeira.txt
+HandRLasVegas.txt      HistoryFrance.txt     HistoryJapan.txt      IntroEgypt.txt           IntroJamaica.txt   JungleMalaysia.txt     WhatToIndia.txt      WhatToMalaysia.txt      WhereToIbiza.txt      WhereToMadrid.txt
+HandRLisbon.txt        HistoryGreek.txt      HistoryJerusalem.txt  IntroFWI.txt             IntroJapan.txt     WhatToDublin.txt       WhatToIsrael.txt     WhatToMallorca.txt      WhereToIndia.txt      WhereToMalaysia.txt
+[cs15lwi23aun@ieng6-201]:berlitz1:385$ grep -l "hello"
+^C
+[cs15lwi23aun@ieng6-201]:berlitz1:386$ grep -l "hello" *.txt
+WhereToHongKong.txt
+WhereToItaly.txt
+[cs15lwi23aun@ieng6-201]:~:375$ ls
+docsearch  hello.txt  lab1  perl5  skill-demo1-data  skill-demo1-server  wavelet
+[cs15lwi23aun@ieng6-201]:~:376$ cd skill-demo1-data
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:377$ ls
+find-results.txt  grep-results.txt  written_2
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:378$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:379$ ls
+non-fiction  travel_guides
+[cs15lwi23aun@ieng6-201]:written_2:380$ cd travel_guides
+[cs15lwi23aun@ieng6-201]:travel_guides:381$ ls
+berlitz1  berlitz2
+[cs15lwi23aun@ieng6-201]:travel_guides:382$ cd grep -l "hello" /berlitz1/*.txt
+-bash: cd: grep: No such file or directory
+[cs15lwi23aun@ieng6-201]:travel_guides:383$ cd berlitz1
+[cs15lwi23aun@ieng6-201]:berlitz1:384$ ls
+HandRHawaii.txt        HandRLosAngeles.txt   HistoryHawaii.txt     HistoryLakeDistrict.txt  IntroFrance.txt    IntroJerusalem.txt     WhatToEdinburgh.txt  WhatToIstanbul.txt      WhereToDublin.txt     WhereToIsrael.txt        WhereToMallorca.txt
+HandRHongKong.txt      HandRMadeira.txt      HistoryHongKong.txt   HistoryLasVegas.txt      IntroGreek.txt     IntroLakeDistrict.txt  WhatToEgypt.txt      WhatToItaly.txt         WhereToEdinburgh.txt  WhereToIstanbul.txt
+HandRIbiza.txt         HandRMadrid.txt       HistoryIbiza.txt      HistoryMadeira.txt       IntroHongKong.txt  IntroLasVegas.txt      WhatToFWI.txt        WhatToJamaica.txt       WhereToEgypt.txt      WhereToItaly.txt
+HandRIsrael.txt        HandRMallorca.txt     HistoryIndia.txt      HistoryMadrid.txt        IntroIbiza.txt     IntroLosAngeles.txt    WhatToFrance.txt     WhatToJapan.txt         WhereToFWI.txt        WhereToJapan.txt
+HandRIstanbul.txt      HistoryDublin.txt     HistoryIsrael.txt     HistoryMalaysia.txt      IntroIndia.txt     IntroMadeira.txt       WhatToGreek.txt      WhatToLakeDistrict.txt  WhereToFrance.txt     WhereToJerusalem.txt
+HandRJamaica.txt       HistoryEdinburgh.txt  HistoryIstanbul.txt   HistoryMallorca.txt      IntroIsrael.txt    IntroMadrid.txt        WhatToHawaii.txt     WhatToLasVegas.txt      WhereToGreek.txt      WhereToLakeDistrict.txt
+HandRJerusalem.txt     HistoryEgypt.txt      HistoryItaly.txt      IntroDublin.txt          IntroIstanbul.txt  IntroMalaysia.txt      WhatToHongKong.txt   WhatToLosAngeles.txt    WhereToHawaii.txt     WhereToLosAngeles.txt
+HandRLakeDistrict.txt  HistoryFWI.txt        HistoryJamaica.txt    IntroEdinburgh.txt       IntroItaly.txt     IntroMallorca.txt      WhatToIbiza.txt      WhatToMadeira.txt       WhereToHongKong.txt   WhereToMadeira.txt
+HandRLasVegas.txt      HistoryFrance.txt     HistoryJapan.txt      IntroEgypt.txt           IntroJamaica.txt   JungleMalaysia.txt     WhatToIndia.txt      WhatToMalaysia.txt      WhereToIbiza.txt      WhereToMadrid.txt
+HandRLisbon.txt        HistoryGreek.txt      HistoryJerusalem.txt  IntroFWI.txt             IntroJapan.txt     WhatToDublin.txt       WhatToIsrael.txt     WhatToMallorca.txt      WhereToIndia.txt      WhereToMalaysia.txt
+[cs15lwi23aun@ieng6-201]:travel_guides:392$ grep -r -l "hello"
+berlitz1/WhereToHongKong.txt
+berlitz1/WhereToItaly.txt
+[cs15lwi23aun@ieng6-201]:travel_guides:393$ grep -l "hello"
+```
+
