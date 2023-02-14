@@ -532,7 +532,7 @@ berlitz1/WhereToItaly.txt
 [cs15lwi23aun@ieng6-201]:travel_guides:393$ grep -l "hello"
 ```
 
-To find these commands I found this website which had most of the commands : https://docs.rackspace.com/support/how-to/use-the-linux-grep-command/ and I also looked at ``` man grep``` for a list of commands.
+To find these commands I found this website which had most of the commands : [Reference to Commands]([https://link-url-here.org](https://docs.rackspace.com/support/how-to/use-the-linux-grep-command/)) and I also looked at ``` man grep``` for a list of commands.
 
 
 
