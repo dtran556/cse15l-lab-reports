@@ -44,7 +44,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:Still, the malecón rules
 [cs15lwi23aun@ieng6-201]:skill-demo1-data:332$ 
 ```
 
-## Command line command #2 grep -c "" 
+## Command line command #2 `grep -c "" `
 This command allows you to go through one or more files to check to see how many times a word appears in each file.
 Example 1 looking at one file:
 ```
