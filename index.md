@@ -55,4 +55,6 @@ Since the Junit tests failed we need to go into the file and edit the code so th
 
 ### Step 6: Commiting and pushing on to GitHub
   If the edits worked and you want to push it onto GitHub you type <git add ListExamples.java> and press <enter> then you type <git commit -m "your choice of message here"> and press <enter> and then type <git push> and press <enter> and you have successfully commited and pushed your edits onto GitHub.
+  
+  
   ![Image](/images/git.png) 
