@@ -51,6 +51,9 @@ Since the Junit tests failed we need to go into the file and edit the code so th
 
 ### Step 5: Running the Junit tests again
   To run the Junit tests again you can use the history of the terminal and press <up> on the key pad until you find the javac command to compile the files and the junit test and press the <up> key again until you see the java command from step 3 and check to see if the edits worked.
+  
+  
+  ![Image](/images/testpass.png) 
 
 
 ### Step 6: Commiting and pushing on to GitHub
