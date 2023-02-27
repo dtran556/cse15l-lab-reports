@@ -25,7 +25,7 @@ To clone you then press the code button ) and press it where you go to ssh inste
   
   
   and this will give you a link where you will paste it into ieng6. In my case the link looks like this git@github.com:dtran556/lab7.git and you go back to the terminal and type this <git clone git@github.com:dtran556/lab7.git> and press <enter> and it looks like this 
-  ![Image](terminalClone.png).
+  ![Image](/images/terminalClone.png).
 
 
 ### Step 3: Running the JUnit tests
