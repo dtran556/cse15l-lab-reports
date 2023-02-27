@@ -9,8 +9,8 @@ To log into my ieng6 account I typed <ssh cs15lwi23aun@ieng6.ucsd.edu> and press
 
 
 ### Step 2: Forking and cloning from the repository on GitHub
-To fork and clone the lab7 repository on GitHub you go to this link [Link](https://github.com/ucsd-cse15l-w23/lab7) which should look like this ![Image](/images/lab7Repo.png) and you go select fork which is this button here ![Image](/images/fork.png) and you press fork.
-To clone you then press the code button which looks like this [Image]!(clone.png) and press it where you go to ssh instead of the normal clone which looks like this: ![Image](/images/clone.png)
+To fork and clone the lab7 repository on GitHub you go to this link [Link](https://github.com/ucsd-cse15l-w23/lab7) which should look like this ![Image](/images/lab7Repo.png) and you go select fork which is this button here:![Image](/images/fork.png) and you press fork.
+To clone you then press the code button ) and press it where you go to ssh instead of the normal clone which looks like this: ![Image](/images/clone.png)
   and you go here: ![Image](/images/sshClone.png) 
   and this will give you a link where you will paste it into ieng6. In my case the link looks like this git@github.com:dtran556/lab7.git and you go back to the terminal and type this <git clone git@github.com:dtran556/lab7.git> and press <enter> and it looks like this ![Image](/images/terminalClone.png).
 
@@ -20,7 +20,9 @@ Next we are running the Junit tests. You type this: <cd lab7> <enter> <ls> <java
 
 
 ### Step 4: Going into the java file and editing the code
-Since the Junit tests failed we need to go into the file and edit the code so that it will pass the Junit tests. You then type <nano ListExamples.java> looked for the bug and then type< ^W index2> to jump to the bug and then edit the code and then press <^O> to save and then <^X> <enter> to save and exit.
+Since the Junit tests failed we need to go into the file and edit the code so that it will pass the Junit tests. You then type <nano ListExamples.java> and you will see this in your terminal:![Image](/images/nano.png)  
+  then you look for the bug and then type< ^W index2> to jump to the bug which looks like this:![Image](/images/nanoBug.png) 
+  and then edit the code and then press <^O> to save and then <^X> <enter> to save and exit.
 
 
 ### Step 5: Running the Junit tests again
