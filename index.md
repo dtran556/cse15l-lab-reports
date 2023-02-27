@@ -9,7 +9,9 @@ To log into my ieng6 account I typed <ssh cs15lwi23aun@ieng6.ucsd.edu> and press
 
 
 ### Step 2: Forking and cloning from the repository on GitHub
-To fork and clone the lab7 repository on GitHub you go to this link [Link](https://github.com/ucsd-cse15l-w23/lab7) which should look like this ![Image](/images/lab7Repo.png) and you go select fork which is this button here:![Image](/images/fork.png) and you press fork.
+To fork and clone the lab7 repository on GitHub you go to this link [Link](https://github.com/ucsd-cse15l-w23/lab7) which should look like this: ![Image](/images/lab7Repo.png)
+  and you go select fork which is this button here:![Image](/images/fork.png) 
+  and you press fork.
 To clone you then press the code button ) and press it where you go to ssh instead of the normal clone which looks like this: ![Image](/images/clone.png)
   and you go here: ![Image](/images/sshClone.png) 
   and this will give you a link where you will paste it into ieng6. In my case the link looks like this git@github.com:dtran556/lab7.git and you go back to the terminal and type this <git clone git@github.com:dtran556/lab7.git> and press <enter> and it looks like this ![Image](/images/terminalClone.png).
