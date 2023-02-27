@@ -6,7 +6,7 @@ In this lab report we are going to talk about logging into ieng6, cloning and fo
 
 ### Step 1: Signing into ieng6
 To log into my ieng6 account I typed <ssh cs15lwi23aun@ieng6.ucsd.edu> and pressed <enter> which automatically logged me into the remote server because I added my github ssh key to my account.
-  ![Image](/images/terminalSignIn.png)
+![Image](/images/terminalSignIn.png)
 
 
 ### Step 2: Forking and cloning from the repository on GitHub
