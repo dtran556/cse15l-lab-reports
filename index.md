@@ -14,13 +14,16 @@ To clone you then press the code button which looks like this [Image]!(clone.png
 
 
 ### Step 3: Running the JUnit tests
-Next we are running the Junit tests. You type this: <javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java> and if you do not get any compile errors you press this: <java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest> which will tell you if you passed the tests or not. In the case of the lab it should look like this : Image]!(failTestClone.png).
+Next we are running the Junit tests. You type this: <cd lab7> <enter> <ls> <javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java> and if you do not get any compile errors you press this: <java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest> which will tell you if you passed the tests or not. In the case of the lab it should look like this : Image]!(failTestClone.png).
 
 
 ### Step 4: Going into the java file and editing the code
+Since the Junit tests failed we need to go into the file and edit the code so that it will pass the Junit tests. You then type <nano ListExamples.java> looked for the bug and then type< ^W index2> to jump to the bug and then edit the code and then press <^O> to save and then <^X> <enter> to save and exit.
 
 
 ### Step 5: Running the Junit tests again
+  To run the Junit tests again you can use the history of the terminal and press <up> on the key pad until you find the javac command to compile the files and the junit test and press the <up> key again until you see the java command from step 3 and check to see if the edits worked.
 
 
 ### Step 6: Commiting and pushing on to GitHub
+  If the edits worked and you want to push it onto GitHub you type <git add ListExamples.java> and press <enter> then you type <git commit -m "your choice of message here"> and press <enter> and then type <git push> and press <enter> and you have successfully commited and pushed your edits onto GitHub
