@@ -38,9 +38,14 @@ Next we are running the Junit tests. You type this: <cd lab7> <enter> <ls> <java
 
 
 ### Step 4: Going into the java file and editing the code
-Since the Junit tests failed we need to go into the file and edit the code so that it will pass the Junit tests. You then type <nano ListExamples.java> and you will see this in your terminal:![Image](/images/nano.png)  
+Since the Junit tests failed we need to go into the file and edit the code so that it will pass the Junit tests. You then type <nano ListExamples.java> and you will see this in your terminal:
+  
+  ![Image](/images/nano.png)  
+  
   then you look for the bug and then type< ^W index2> to jump to the bug which looks like this:
+  
   ![Image](/images/nanoBug.png) 
+  
   and then edit the code and then press <^O> to save and then <^X> <enter> to save and exit.
 
 
