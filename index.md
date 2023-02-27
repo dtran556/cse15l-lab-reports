@@ -32,7 +32,9 @@ To clone you then press the code button ) and press it where you go to ssh inste
 
 ### Step 3: Running the JUnit tests
 Next we are running the Junit tests. You type this: <cd lab7> <enter> <ls> <javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java> and if you do not get any compile errors you press this: <java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest> which will tell you if you passed the tests or not. In the case of the lab it should look like this : 
-  ![Image](/images/failTestClone.png).
+  
+  
+![Image](/images/failTestClone.png).
 
 
 ### Step 4: Going into the java file and editing the code
