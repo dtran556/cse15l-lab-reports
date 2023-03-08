@@ -15,11 +15,27 @@ To fork and clone the lab7 repository on GitHub you go to this link [Link](https
   ![Image](/images/lab7Repo.png)
   
   and you go select fork which is this button here:
+  
+  
+  
   ![Image](/images/fork.png) 
   
   and you press fork.
+  
+  
+  
+  
 To clone you then press the code button ) and press it where you go to ssh instead of the normal clone which looks like this: 
+  
+  
+  
+  
+  
   ![Image](/images/clone.png)
+  
+  
+  
+  
   and you go here: 
   
   
@@ -57,7 +73,7 @@ Since the Junit tests failed we need to go into the file and edit the code so th
 
 
 ### Step 6: Commiting and pushing on to GitHub
-  If the edits worked and you want to push it onto GitHub you type <git add ListExamples.java> and press <enter> then you type <git commit -m "your choice of message here"> and press <enter> and then type <git push> and press <enter> and you have successfully commited and pushed your edits onto GitHub.
+  If the edits worked and you want to push it onto GitHub you type <git add ListExamples.java> and press <enter> then you type git commit -m "your choice of message here" and press <enter> and then type <git push> and press <enter> and you have successfully commited and pushed your edits onto GitHub.
   
   
   ![Image](/images/git.png) 
