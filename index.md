@@ -1,1 +1,4 @@
-### Lab Report 5:
+# Lab Report 5:
+### By Daniel Tran
+
+My favorite lab to do was lab 7 where you had to complete a lab task quickly and at the end we would race against other groups in the same lab to see who would finish first. This lab was my favorite because the labs before felt like all I had to do was read and copy the instructions where as this lab I was forced to test my knowledge of previous material in the course to try to figure out a way to do the lab task quickly. The lab itself was not very much reading off a screen and going to previous lab documents and lecture materials to find the right tools to copy and paste and instead it was more of testing our previous knowlege by seeing if we remember how to clone a repository, know how to edit a file within the command line terminal, running JUnit tests on the file and then updating the repository with our new changes.
