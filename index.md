@@ -17,4 +17,10 @@ The reason why I enjoyed this lab alot was because it felt more like a skill dem
 
 When I was doing the tasks by my self just to see how fast I could do all these tasks, I was going in and just manually typing everything and occasionally using the autocomplete feature to help speed up the process and managed to get in at around 57 seconds to finish the entire task. However when I got together with my group, we discussed how to do the entire lab with other command line tools to do the entire lab in one line. This forces us to use resources like Chat GPT, Stack Overflow, and Geeks for Geeks to see if we can add anything to our line of code to make our group be the fastest. From there we discovered the use of the ```;``` to signify the endline which allowed us to fit other commands into this line and the ```sed``` command which allows us to edit a given file without having to manually go into the file and change the code ourselves.
 
+To use the ```;``` we did something like this in our lab : ```ssh cs15lwi23atd@ieng6.ucsd.edu 'rm -rf lab7/;git clone git@github.com:GonzaloAllenPerez444/lab7.git;cd lab7/;javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java;java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest'``` 
+where each semicolin would be like a new line in the command line terminal which allowed us to run multiple commands.
+
+To use the ```sed``` command we just added ```sed 's/index1/index2 ListExamples.txt``` which allowed us to quickly edit the file.
+In the end our group was able to finsh the task in about 3.5 seconds but when it came time for the race our group could not participate for the final race because there was a copy paste error and we could not figure out why our commands would not work which cost us the win. 
+
 
