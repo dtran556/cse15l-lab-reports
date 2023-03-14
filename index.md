@@ -571,12 +571,21 @@ Example :
 ```
 In this example I am having the computer list out everything inside the written_2 directory, this can prove to be useful if you just want to see a big picture of everthing in a given directory.
 
-## Command line command #4 `grep -l ""`
-You can use this command to look for a given string inside files in a directory.
+## Command line command #4 `find [path] -type f -empty`
+This command will go and check for any file that is empty and will return a list of the files that are empty and their respective file path.
+This can prove to be useful when you want to check if something is taking up uneccesary space.
 
-Example 1 looking for a string inside one directory:
-
-Example 2 using -l with -r to look through multiple directories:
+Example:
+```
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:505$ cd written_2
+[cs15lwi23aun@ieng6-201]:written_2:506$ touch "hello.txt"
+[cs15lwi23aun@ieng6-201]:written_2:507$ touch "empty.txt"
+[cs15lwi23aun@ieng6-201]:written_2:508$ cd ..                               
+[cs15lwi23aun@ieng6-201]:skill-demo1-data:509$ find written_2 -type f -empty
+written_2/hello.txt
+written_2/empty.txt
+```
+In this example I am creating two empty files and placing them inside the written_2 directory and then going back out and finding the empty file.
 
 
 To find these commands I found this website which had most of the commands : [Reference to Commands]([https://link-url-here.org](https://www.redhat.com/sysadmin/linux-find-command)) and I also looked at ``` man find``` for a list of commands and Chat GPT to have a better understanding of the commands .
